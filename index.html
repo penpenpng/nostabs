@@ -14,10 +14,10 @@
     <script>
       document
         .getElementById("btn-easy")
-        .addEventListener("click", () => calc("easy"));
+        .addEventListener("click", () => out("easy"));
       document
         .getElementById("btn-hard")
-        .addEventListener("click", () => calc("hard"));
+        .addEventListener("click", () => out("hard"));
 
       async function out(difficulty) {
         const npub = await getNpub();
